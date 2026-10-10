@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CNC — SINUMERIK 808D | Guía de aprendizaje y prácticas</title>
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="css/practicas.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="gear">⚙</span> CNC — SINUMERIK 808D <em>|</em> <small>Guía de aprendizaje y prácticas</small></div>
+  <nav>
+    <a href="#inicio">Aprende</a>
+    <a href="#practicas">Práctica</a>
+    <a href="#programacion">Programa</a>
+    <a href="#maquina">Máquina</a>
+  </nav>
+</header>
+
+<div class="layout">
+<aside class="sidebar">
+  <div class="side-title">MENÚ</div>
+  <button class="nav-item active" data-section="inicio">⌂ <span>Inicio</span></button>
+  <button class="nav-item" data-section="seguridad">⚠ <span>Seguridad</span></button>
+  <button class="nav-item" data-section="maquina">▣ <span>1. Conociendo la máquina</span></button>
+  <button class="nav-item" data-section="control">▤ <span>2. Control SINUMERIK 808D</span></button>
+  <button class="nav-item" data-section="puesta">⚙ <span>3. Puesta en marcha</span></button>
+  <button class="nav-item" data-section="coordenadas">⌖ <span>4. Coordenadas</span></button>
+  <button class="nav-item" data-section="herramientas">▣ <span>5. Herramientas</span></button>
+  <button class="nav-item" data-section="programacion">‹/› <span>6. Programación CNC</span></button>
+  <button class="nav-item" data-section="ejecucion">▶ <span>7. Ejecutar un programa</span></button>
+  <button class="nav-item" data-section="practicas">🎯 <span>8. Prácticas</span></button>
+  <button class="nav-item" data-section="diagnostico">⌕ <span>10. Diagnóstico</span></button>
+
+  <div class="flow">
+    <h4>FLUJO DE APRENDIZAJE</h4>
+    <div class="flow-list">
+      <span>Inicio</span><span>Seguridad</span><span>Conociendo la máquina</span>
+      <span>SINUMERIK 808D</span><span>Encendido</span><span>Referenciado</span>
+      <span>Herramientas</span><span>Cero pieza</span><span>Coordenadas</span>
+      <span>Programación</span><span>Simulación</span><span>Ejecución</span>
+      <span>Alarmas</span><span>Prácticas</span>
+    </div>
+  </div>
+</aside>
+
+<main class="content">
+<section id="inicio" class="page active">
+  <div class="welcome">
+    <div>
+      <span class="eyebrow">MANUAL DIGITAL DE CAPACITACIÓN</span>
+      <h1>¡Bienvenido!</h1>
+      <p>Esta guía te lleva paso a paso para conocer una fresadora CNC DATAN ME500 con control <strong>SINUMERIK 808D Milling</strong>. Aprende primero, practica después y ejecuta solamente cuando hayas comprendido cada procedimiento.</p>
+      <div class="tags"><span>📘 Teoría</span><span>🖥️ Control</span><span>💻 G-code</span><span>🎯 Prácticas</span></div>
+    </div>
+    <img src="img/guia_visual_generada.png" alt="Infografía generada para la guía CNC">
+  </div>
+
+  <div class="section-head"><div><span>RUTA</span><h2>¿Qué aprenderás?</h2></div><p>Completa los temas en orden para construir una base sólida antes de maquinar.</p></div>
+  <div class="cards-grid">
+    <article class="module-card" data-go="maquina"><b>1</b><h3>🏭 Conociendo la máquina</h3><p>Vista general, componentes, ejes X/Y/Z, husillo, mesa y cambiador.</p></article>
+    <article class="module-card" data-go="control"><b>2</b><h3>🖥️ SINUMERIK 808D</h3><p>Panel, pantalla, teclas, softkeys y modos de operación.</p></article>
+    <article class="module-card" data-go="puesta"><b>3</b><h3>⚙️ Puesta en marcha</h3><p>Encendido, referenciado, preparación y apagado.</p></article>
+    <article class="module-card" data-go="coordenadas"><b>4</b><h3>📐 Coordenadas</h3><p>Sistema máquina, sistema pieza, cero pieza y X/Y/Z.</p></article>
+    <article class="module-card" data-go="herramientas"><b>5</b><h3>🛠️ Herramientas</h3><p>Selección, correctores, longitud y compensaciones.</p></article>
+    <article class="module-card" data-go="programacion"><b>6</b><h3>💻 Programación CNC</h3><p>G-code, G00/G01, G02/G03, M-codes, RPM y avance.</p></article>
+    <article class="module-card" data-go="ejecucion"><b>7</b><h3>▶️ Ejecutar un programa</h3><p>Cargar, simular, Single Block, Dry Run y ejecución.</p></article>
+    <article class="module-card" data-go="practicas"><b>8</b><h3>🔧 Prácticas</h3><p>Movimiento X/Y, movimiento X/Y/Z y maquinado final.</p></article>
+    <article class="module-card" data-go="seguridad"><b>9</b><h3>⚠️ Seguridad</h3><p>EPP, área de trabajo, paro de emergencia y buenas prácticas.</p></article>
+    <article class="module-card" data-go="diagnostico"><b>10</b><h3>🔍 Diagnóstico</h3><p>Alarmas, mensajes y solución ordenada de problemas.</p></article>
+  </div>
+
+  <div class="generated-panel">
+    <div><h2>🧭 Ruta recomendada</h2><p>La secuencia está pensada para que primero entiendas la máquina y después pases a movimientos y programación.</p></div>
+    <img src="img/ruta_aprendizaje_generada.png" alt="Infografía generada de ruta de aprendizaje CNC">
+  </div>
+</section>
+
+<section id="seguridad" class="page">
+  <div class="page-title"><span>⚠️</span><div><h1>9. Seguridad</h1><p>La seguridad es el punto de partida antes de cualquier movimiento.</p></div></div>
+  <div class="warning"><strong>IMPORTANTE</strong><p>Este manual es educativo y no sustituye la capacitación del laboratorio, el manual del fabricante ni las instrucciones del responsable de la máquina. No ejecutes movimientos o programas reales únicamente con esta página.</p></div>
+  <div class="generated-panel"><div><h2>🦺 Regla principal</h2><p>Primero elimina riesgos: EPP, guardas, área libre y paro de emergencia identificado.</p></div><img src="img/seguridad.svg" alt="Diagrama de seguridad para operar una CNC"></div>
+  <div class="two-col">
+    <div class="panel"><h2>Antes de operar</h2><ol><li>Usa el equipo de protección indicado por el laboratorio.</li><li>Comprueba que la zona de trabajo esté libre de personas y objetos sueltos.</li><li>Verifica que puertas y guardas estén en su posición correcta.</li><li>Identifica el paro de emergencia.</li><li>Confirma la sujeción de la pieza y herramienta antes de ejecutar.</li></ol></div>
+    <div class="panel"><h2>Reglas básicas</h2><ul><li>No introduzcas las manos en el área de mecanizado.</li><li>No retires viruta con la máquina en movimiento.</li><li>Ante un comportamiento inesperado, detén el proceso y consulta al responsable.</li><li>En prácticas reales, valida parámetros y procedimientos específicos de tu máquina.</li></ul></div>
+  </div>
+</section>
+
+<section id="maquina" class="page">
+  <div class="page-title"><span>🏭</span><div><h1>1. Conociendo la máquina</h1><p>Identifica físicamente cada parte antes de aprender a moverla.</p></div></div>
+  <div class="photo-large hotspots">
+    <img src="img/maquina.jpg" alt="DATAN ME500">
+    <button style="left:82%;top:49%" data-tip="Panel de control">1</button>
+    <button style="left:47%;top:52%" data-tip="Área de trabajo">2</button>
+    <button style="left:51%;top:45%" data-tip="Puerta de seguridad">3</button>
+    <button style="left:48%;top:72%" data-tip="Mesa de trabajo">4</button>
+  </div>
+  <div class="subgrid">
+    <article class="panel"><h2>Vista general</h2><p>La DATAN ME500 es una fresadora CNC de tres ejes como referencia didáctica. La fotografía real de tu equipo se conserva como base visual.</p></article>
+    <article class="panel"><h2>Componentes principales</h2><ul><li>Cabina y puerta</li><li>Panel de control</li><li>Mesa de trabajo</li><li>Husillo y portaherramienta</li><li>Sistema de cambio de herramienta</li></ul></article>
+  </div>
+  <div class="axis-panel">
+    <div><h2>Ejes X, Y, Z</h2><p><b>X</b>: izquierda/derecha. <b>Y</b>: adelante/atrás. <b>Z</b>: arriba/abajo del conjunto de herramienta, según la configuración mostrada.</p></div>
+    <div class="axis-diagram"><span class="x">X</span><span class="y">Y</span><span class="z">Z</span><div class="cube">PIEZA</div></div>
+  </div>
+  <div class="subgrid three">
+    <article class="panel"><h2>Husillo</h2><p>Gira la herramienta de corte. Su velocidad se expresa normalmente en revoluciones por minuto (RPM).</p><img src="img/interior.jpg" alt="Husillo y área de trabajo"></article>
+    <article class="panel"><h2>Mesa de trabajo</h2><img class="section-photo" src="img/mesa_cnc.jpg" alt="Mesa CNC con ranuras en T y prensa"><p>Superficie donde se fija la pieza mediante prensa, bridas o utillaje compatible. La placa de este equipo indica una mesa de 600 × 300 mm; verifica siempre la configuración de tu máquina.</p><p class="note">Antes de mecanizar, comprueba que la pieza y el utillaje estén firmemente sujetos y no interfieran con el recorrido.</p></article>
+    <article class="panel"><h2>Cambiador de herramienta</h2><img class="section-photo" src="img/cambiador_herramientas.jpg" alt="Carrusel de herramientas CNC"><p>Almacena herramientas para seleccionarlas según la operación. El cambio depende de la configuración instalada; no asumas que es automático sin confirmarlo en la DATAN ME500 del laboratorio.</p><p class="note">Mantén manos y objetos fuera del área de cambio y sigue el procedimiento autorizado.</p></article>
+  </div>
+</section>
+
+<section id="control" class="page">
+  <div class="page-title"><span>🖥️</span><div><h1>2. Control SINUMERIK 808D</h1><p>Aprende qué hace cada zona del panel antes de usar comandos.</p></div></div>
+  <div class="two-col">
+    <div class="photo-large"><img src="img/panel.jpg" alt="Panel SINUMERIK 808D"><div class="photo-caption">Panel real del equipo · referencia para localizar pantalla, teclas y softkeys</div></div>
+    <div class="panel-list">
+      <article><b>01</b><h3>Pantalla</h3><p>Muestra coordenadas, programas, estados, alarmas y menús.</p></article>
+      <article><b>02</b><h3>Teclas</h3><p>Permiten introducir datos, navegar y seleccionar funciones.</p></article>
+      <article><b>03</b><h3>Softkeys</h3><p>Las funciones cambian según la pantalla o menú activo.</p></article>
+      <article><b>04</b><h3>Modos de operación</h3><p>Para fines didácticos distingue entre JOG/manual, edición, simulación y ejecución según la configuración disponible.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="puesta" class="page">
+  <div class="page-title"><span>⚙️</span><div><h1>3. Puesta en marcha</h1><p>Procedimiento conceptual: siempre sigue el procedimiento real de tu laboratorio.</p></div></div>
+  <div class="generated-panel"><div><h2>⚙️ Secuencia visual</h2><p>Usa esta imagen como recordatorio de la secuencia conceptual antes de entrar al simulador.</p></div><img src="img/puesta_marcha.svg" alt="Secuencia de puesta en marcha"></div>
+  <div class="visual-sequence"><article><img src="img/encendido_panel.jpg" alt="Controles de encendido y paro"><b>1 · Encendido</b><p>Identifica los controles; usa únicamente la secuencia indicada por el instructor.</p></article><article><img src="img/display_coordenadas.jpg" alt="Pantalla de posición del control"><b>2 · Referenciado</b><p>Comprueba el estado de los ejes y realiza el referenciado según el procedimiento de la máquina.</p></article><article><img src="img/mesa_cnc.jpg" alt="Mesa y área de trabajo"><b>3 · Preparación</b><p>Verifica pieza, herramienta, sujeción y área de trabajo.</p></article><article><img src="img/encendido_panel.jpg" alt="Panel de control"><b>4 · Apagado</b><p>Finaliza el ciclo, deja el equipo en estado seguro y apaga como indique el laboratorio.</p></article></div>
+  <div class="steps">
+    <article><b>1</b><h3>Encendido</h3><p>Comprueba el área y activa la máquina siguiendo la secuencia autorizada.</p></article>
+    <article><b>2</b><h3>Referenciado</h3><p>Lleva los ejes a su referencia cuando el procedimiento de la máquina lo requiera.</p></article>
+    <article><b>3</b><h3>Preparación</h3><p>Comprueba herramienta, pieza, cero pieza, programa y parámetros.</p></article>
+    <article><b>4</b><h3>Apagado</h3><p>Finaliza el ciclo, deja el área segura y apaga según el procedimiento indicado.</p></article>
+  </div>
+</section>
+
+<section id="coordenadas" class="page">
+  <div class="page-title"><span>📐</span><div><h1>4. Coordenadas</h1><p>Comprende la diferencia entre máquina, pieza y posición de trabajo.</p></div></div>
+  <div class="generated-panel"><div><h2>📐 Visualiza los ejes</h2><p>Relaciona el origen, las direcciones y el cero pieza antes de practicar.</p></div><img src="img/coordenadas.svg" alt="Diagrama de ejes y cero pieza"></div>
+  <div class="visual-pair"><figure><img src="img/display_coordenadas.jpg" alt="Pantalla de coordenadas X Y Z"><figcaption>Lectura de posición: X, Y y Z (visual de referencia).</figcaption></figure><figure><img src="img/mesa_cnc.jpg" alt="Mesa CNC donde se define el origen de la pieza"><figcaption>El cero pieza se relaciona con un punto definido sobre la pieza.</figcaption></figure></div>
+  <div class="concept-grid">
+    <article><h3>Sistema máquina</h3><p>Referencia propia de la máquina. Sirve para establecer posiciones y referencias del equipo.</p></article>
+    <article><h3>Sistema pieza</h3><p>Referencia que se utiliza para programar el mecanizado respecto a la pieza.</p></article>
+    <article><h3>Cero pieza</h3><p>Punto elegido como origen del programa. Su selección debe ser clara y repetible.</p></article>
+    <article><h3>X / Y / Z</h3><p>Cada eje representa una dirección. Los signos dependen de la orientación y configuración de la máquina.</p></article>
+  </div>
+  <div class="interactive-question" data-answer="b">
+    <h2>🧠 Mini reto</h2><p>Si quieres mover la herramienta hacia arriba en el eje vertical mostrado en este manual, ¿qué eje estudiarías primero?</p>
+    <button data-option="a">X</button><button data-option="b">Z</button><button data-option="c">Y</button>
+    <p class="feedback"></p>
+  </div>
+</section>
+
+<section id="herramientas" class="page">
+  <div class="page-title"><span>🛠️</span><div><h1>5. Herramientas</h1><p>La herramienta y sus correctores determinan cómo interpreta el control la geometría real.</p></div></div>
+  <div class="generated-panel"><div><h2>🛠️ Identifica el corrector</h2><p>La longitud y la compensación son datos que el control utiliza para interpretar la herramienta real.</p></div><img src="img/herramientas.svg" alt="Diagrama de herramienta y correctores"></div>
+  <div class="visual-pair"><figure><img src="img/fresas_cnc.jpg" alt="Ejemplos de herramientas de corte CNC"><figcaption>Herramientas de geometrías distintas para operaciones diferentes.</figcaption></figure><figure><img src="img/cambiador_herramientas.jpg" alt="Carrusel de herramientas"><figcaption>Almacén o cambiador de herramientas, según la configuración.</figcaption></figure></div>
+  <div class="two-col">
+    <div class="panel"><h2>Selección</h2><p>Identifica el número de herramienta y verifica que sea la herramienta prevista para la operación.</p><h2>Correctores</h2><p>Los correctores compensan diferencias entre la herramienta nominal y la herramienta real.</p></div>
+    <div class="panel"><h2>Longitud</h2><p>El control necesita conocer la longitud efectiva de la herramienta para posicionar el eje Z correctamente.</p><h2>Compensaciones</h2><p>Dependiendo de la operación pueden existir compensaciones de longitud y de radio. Valida siempre la sintaxis y el procedimiento del 808D instalado.</p></div>
+  </div>
+</section>
+
+<section id="programacion" class="page">
+  <div class="page-title"><span>💻</span><div><h1>6. Programación CNC</h1><p>Aprende primero el significado de cada comando; después practica con trayectorias sencillas.</p></div></div>
+  <div class="generated-panel"><div><h2>💻 De código a trayectoria</h2><p>Cada bloque produce una instrucción que el control convierte en movimiento.</p></div><img src="img/programacion.svg" alt="Trayectoria CNC a partir de G-code"></div>
+  <div class="code-layout">
+    <div class="panel">
+      <h2>Ejemplo didáctico</h2>
+      <pre><code>N10 G00 X0 Y0
+N20 G01 X50 Y0 F200
+N30 G01 X50 Y30
+N40 G01 X0 Y30
+N50 G01 X0 Y0
+N60 M30</code></pre>
+      <p class="note">Ejemplo conceptual de una trayectoria rectangular. No lo ejecutes directamente en una máquina sin revisar origen, herramienta, alturas, avances, límites y procedimiento de seguridad.</p>
+    </div>
+    <div class="concept-grid compact">
+      <article><h3>G00</h3><p>Movimiento rápido.</p></article>
+      <article><h3>G01</h3><p>Movimiento lineal con avance.</p></article>
+      <article><h3>G02 / G03</h3><p>Interpolación circular.</p></article>
+      <article><h3>M-codes</h3><p>M03/M05, M30 y otras funciones auxiliares según la configuración.</p></article>
+      <article><h3>RPM</h3><p>Velocidad de giro del husillo.</p></article>
+      <article><h3>F</h3><p>Avance programado.</p></article>
+    </div>
+  </div>
+  <div class="panel tutorial-panel"><h2>📥 Guía interactiva: introducir un programa en el panel</h2><p>Recorrido didáctico de las pantallas habituales. Los nombres exactos de las softkeys pueden variar según la versión del 808D.</p><div class="tutorial-stepper" id="loadTutorial"><img src="img/display_programa.jpg" alt="Pantalla de programa CNC"><div><span class="eyebrow" id="loadCount">PASO 1 DE 5</span><h3 id="loadTitle">Entrar al área de programa</h3><p id="loadText">Con el control en estado seguro, localiza el área Programa / Program Manager según la interfaz instalada.</p><div class="step-actions"><button type="button" id="loadPrev" disabled>← Anterior</button><button type="button" id="loadNext">Siguiente →</button></div></div></div><ol class="tutorial-index"><li class="active">Programa</li><li>Crear/seleccionar</li><li>Introducir código</li><li>Guardar</li><li>Verificar</li></ol><p class="note">No copies un programa a una máquina real sin revisar origen, herramienta, límites, avance, RPM, alturas seguras y autorización del responsable.</p></div>
+</section>
+
+<section id="ejecucion" class="page">
+  <div class="page-title"><span>▶️</span><div><h1>7. Ejecutar un programa</h1><p>La simulación y la revisión reducen errores antes de una ejecución real.</p></div></div>
+  <div class="generated-panel"><div><h2>▶️ Verifica antes de ejecutar</h2><p>La ruta segura es revisar, simular y comprobar antes de permitir el corte.</p></div><img src="img/ejecucion.svg" alt="Secuencia de verificación antes de ejecutar un programa CNC"></div>
+  <div class="visual-pair"><figure><img src="img/display_programa.jpg" alt="Pantalla de programa y trayectoria"><figcaption>Ejemplo visual de una pantalla de programa y trayectoria; la disposición real puede variar.</figcaption></figure><figure><img src="img/display_coordenadas.jpg" alt="Pantalla de posición"><figcaption>Confirma la posición y el estado antes de permitir movimientos.</figcaption></figure></div>
+  <div class="panel tutorial-panel"><h2>🧭 Secuencia interactiva de ejecución</h2><p>Avanza para conocer el propósito de cada función antes de trabajar en el equipo real.</p><div class="execution-step" id="executionStep"><span class="eyebrow" id="execCount">PASO 1 DE 5</span><h3 id="execTitle">1. Cargar programa</h3><p id="execText">Abre el administrador de programas, selecciona el archivo correcto y confirma el nombre. No ejecutes aún.</p><img id="execImage" src="img/display_programa.jpg" alt="Referencia visual de programa"></div><div class="step-actions"><button id="execPrev" disabled>← Anterior</button><button id="execNext">Siguiente →</button></div><ol class="tutorial-index" id="execIndex"><li class="active">Cargar</li><li>Simular</li><li>Single Block</li><li>Dry Run</li><li>Cycle Start</li></ol><p class="note">Single Block, Dry Run y Cycle Start dependen de la versión y configuración. En una máquina real, la ejecución requiere supervisión, resguardos cerrados y autorización del instructor.</p></div>
+</section>
+
+<section id="practicas" class="page">
+  <div class="page-title"><span>🔧</span><div><h1>8. Prácticas interactivas</h1><p>Aprende como si estuvieras frente al panel: una acción sencilla por vez.</p></div></div>
+  <div class="generated-panel"><div><h2>🎯 Ruta de prácticas</h2><p>Primero mueve X/Y, después X/Y/Z y al final ejecuta un maquinado guiado. No necesitas escribir G-code para completar los dos primeros retos.</p></div><img src="img/maquina_entrenamiento.png" alt="Máquina CNC de entrenamiento con ejes y panel de control"></div>
+  <div class="practice-board">
+    <article class="practice" id="practice1"><div class="practice-num">1</div><div class="practice-body"><span class="status">DISPONIBLE</span><h2>Movimiento X / Y</h2><p>Mueve la herramienta en dos ejes y observa el cambio en el DRO.</p><button class="sim-start" data-p="1">▶ Iniciar práctica</button></div></article>
+    <article class="practice locked" id="practice2"><div class="practice-num">2</div><div class="practice-body"><span class="status">🔒 BLOQUEADA</span><h2>Movimiento X / Y / Z</h2><p>Añade el eje Z y comprueba cómo cambia la posición de la herramienta.</p><button class="sim-start" data-p="2">▶ Iniciar práctica</button></div></article>
+    <article class="practice locked" id="practice3"><div class="practice-num">3</div><div class="practice-body"><span class="status">🔒 BLOQUEADA</span><h2>Maquinado final</h2><p>Observa una trayectoria rectangular y ejecuta el ciclo guiado hasta terminar.</p><button class="sim-start" data-p="3">▶ Iniciar práctica</button></div></article>
+  </div>
+  <div class="panel practice-code-guide"><h2>🧾 Código de ejemplo con avance línea por línea</h2><p>En la práctica 3, al pulsar <b>CYCLE START</b>, se resaltará cada bloque del programa didáctico y la herramienta recorrerá el contorno en la simulación.</p><pre><code id="practiceCode">N10 G00 X0 Y0 Z25
+N20 G01 Z-2 F100
+N30 G01 X40 Y0 F200
+N40 G01 X40 Y25
+N50 G01 X0 Y25
+N60 G01 X0 Y0
+N70 G00 Z25
+N80 M30</code></pre><p class="note">Código únicamente demostrativo; no se envía a una máquina real.</p></div>
+  <div id="sim" hidden></div>
+</section>
+
+<section id="diagnostico" class="page">
+  <div class="page-title"><span>🔍</span><div><h1>10. Diagnóstico</h1><p>Ante un problema, primero identifica qué informa el control y después actúa.</p></div></div>
+  <div class="generated-panel"><div><h2>🔍 Método de diagnóstico</h2><p>No borres una alarma sin entenderla: identifica el mensaje, busca la causa y actúa de forma segura.</p></div><img src="img/diagnostico.svg" alt="Diagrama de diagnóstico de alarmas CNC"></div>
+  <div class="two-col">
+    <div class="panel"><h2>Alarmas</h2><p>Registra el número y texto de la alarma. No borres el mensaje sin comprender qué lo provocó.</p><h2>Mensajes</h2><p>Distingue entre una alarma, un aviso y una condición que impide ejecutar el ciclo.</p></div>
+    <div class="panel"><h2>Solución de problemas</h2><ol><li>Detén el proceso de forma segura.</li><li>Lee el mensaje completo.</li><li>Comprueba las condiciones básicas.</li><li>Consulta el procedimiento o manual correspondiente.</li><li>Si persiste, solicita apoyo al responsable.</li></ol></div>
+  </div>
+</section>
+
+<section class="page" id="datos">
+  <div class="page-title"><span>📋</span><div><h1>Datos de la DATAN ME500</h1><p>Información visible en la placa fotografiada de tu equipo.</p></div></div>
+  <div class="specs">
+    <div><b>Fabricante</b><span>Hangzhou Datian CNC Machine Tool Co., Ltd.</span></div>
+    <div><b>Modelo</b><span>ME500</span></div>
+    <div><b>Mesa</b><span>600 × 300 mm</span></div>
+    <div><b>Fabricación</b><span>24/10/2016</span></div>
+    <div><b>Alimentación</b><span>380 V · 3 fases · 60 Hz</span></div>
+    <div><b>Capacidad indicada</b><span>10 kVA</span></div>
+    <div><b>Protección</b><span>IP54</span></div>
+    <div><b>Control</b><span>Siemens SINUMERIK 808D Milling</span></div>
+  </div>
+</section>
+</main>
+
+<aside class="rightbar">
+  <div class="progress-card"><h2>Tu progreso</h2><div class="progress-ring"><span id="progressPct">0%</span></div><p><b id="progressCount">0</b> de 3 prácticas</p><div class="bar"><i id="progressBar"></i></div></div>
+  <div class="practice-card"><h2>🎯 Prácticas</h2><p>Completa los retos en orden. Cada práctica desbloquea la siguiente.</p>
+    <div class="mini-practice" data-mini="1"><b>1</b><div><strong>Movimiento X / Y</strong><small>Simulador</small></div></div>
+    <div class="mini-practice locked-mini" data-mini="2"><b>2</b><div><strong>Movimiento X / Y / Z</strong><small>Simulador</small></div></div>
+    <div class="mini-practice locked-mini" data-mini="3"><b>3</b><div><strong>Maquinado final</strong><small>Simulador</small></div></div>
+    </div>
+  <div class="motivation"><div>◎</div><h2>¡Tú puedes!</h2><p>Con práctica y paciencia, cada concepto se vuelve más sencillo.</p></div>
+</aside>
+</div>
+<script src="js/app.js"></script>
+<script src="js/simulador.js"></script>
+</body>
+</html>
